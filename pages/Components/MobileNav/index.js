@@ -21,7 +21,7 @@ function MobileNav() {
             </div>
             {
                 show ? <div className={`${Styles.navList} bg-dark`} id="navList">
-                    <ul>
+                    <ul className={`${Styles.navItems}`}>
                         <li>
                             <a href="/">Home</a>
                         </li>
