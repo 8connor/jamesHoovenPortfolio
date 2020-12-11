@@ -10,11 +10,11 @@ function InfoCon() {
     const config = {
         marginTop: "300px",
         fontSize: "45px",
-        lineHeight: "0.5" 
+        lineHeight: "0.5"
     }
 
     return (
-        <div>
+        <>
             <Container id="Home">
                 <Row style={config}>
                     <Col sm={{ span: 10, offset: 0 }} md={{ span: 10, offset: 0 }} lg={{ span: 10, offset: 0 }}>
@@ -29,11 +29,11 @@ function InfoCon() {
                         </p>
                     </Col>
                     <Col sm={{ span: 2, offset: 0 }} md={{ span: 2, offset: 0 }} lg={{ span: 2, offset: 0 }}>
-                        <FontAwesomeIcon size={"5x"} icon={faCog} className={`${styles.cog} text-primary`} id="cog" />
+                        <FontAwesomeIcon size={"5x"} icon={faCog} className={`${styles.cog} text-primary`} />
                     </Col>
                 </Row>
             </Container>
-        </div >
+        </>
     )
 }
 

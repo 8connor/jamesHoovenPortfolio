@@ -13,27 +13,3 @@ $theme-colors: (
 body {
   background-color: $dark;
 }
-
-.sideBar {
-  height: 100%;
-  width: 60px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.iconCon {
-  margin-top: 250px;
-}
-
-.sideBar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 23px;
-  display: block;
-  line-height: 0.5;
-  margin-top: 50px;
-}

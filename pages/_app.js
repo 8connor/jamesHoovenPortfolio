@@ -1,17 +1,31 @@
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import SideBar from "./Components/SideBar";
-import React from "react"
-import Loader from "./Components/Loader";
-import "../styles/global.scss"
+import NProgress from "nprogress";
+import "../node_modules/nprogress/nprogress.css"
+import "../styles/global.scss";
+import MobileNav from "./Components/MobileNav";
 
 function MyApp({ Component, pageProps }) {
+  NProgress.configure({ showSpinner: false });
+
+  const router = useRouter();
+
+  useEffect(() => {
+    router.events.on("routeChangeStart", NProgress.start());
+    router.events.on("routeChangeComplete", NProgress.done());
+    router.events.on("routeChangeError", NProgress.done());
+
+  }, [])
 
   return (
     <>
-      <Loader />
+      <MobileNav />
       <SideBar />
       <Component {...pageProps} />
     </>
   )
+
 }
 
 export default MyApp
