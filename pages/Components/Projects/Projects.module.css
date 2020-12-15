@@ -3,5 +3,18 @@
 }
 
 .projCon {
-    margin-top: 10px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px){
+    .infoCards {
+        margin-top: 10px;
+        height: 350px;
+    }
+    
+    .projCon {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }

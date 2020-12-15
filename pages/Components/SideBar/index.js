@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faIdBadge, faFileAlt, faProjectDiagram, faHome } from '@fortawesome/free-solid-svg-icons';
-import styles from "./SideBar.module.css";
+import Styles from "./SideBar.module.css";
 
 function SideBar() {
     const [resume, setResume] = useState("");
@@ -27,8 +27,8 @@ function SideBar() {
     }, [])
 
     return (
-        <div className={`${styles.sideBar} bg-dark`}>
-            <div className={styles.iconCon}>
+        <div className={`${Styles.sideBar} bg-dark`}>
+            <div className={Styles.iconCon}>
                 <a href="/">
                     <FontAwesomeIcon icon={faHome} className={`${home}`}  />
                 </a>

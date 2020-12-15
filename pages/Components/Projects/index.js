@@ -25,7 +25,7 @@ function Projects() {
                     </Card>
                 </Col>
                 <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                    <Card className={`${Styles.infoCards}`}>
+                    <Card className={Styles.infoCards}>
                         <Img src="/images/collabSoup.png" width="400px" height="400px"></Img>
                         <Card.Body>
                             <Card.Title>
@@ -38,7 +38,7 @@ function Projects() {
                     </Card>
                 </Col>
                 <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                    <Card className={`${Styles.infoCards}`}>
+                    <Card className={Styles.infoCards}>
                         <Img src="/images/homeFinder.png" width="400px" height="400px"></Img>
                         <Card.Body>
                             <Card.Title>
