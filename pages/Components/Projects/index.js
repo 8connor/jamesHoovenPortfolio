@@ -17,10 +17,10 @@ function Projects() {
                         <Card.Body>
                             <Card.Title>
                                 GradeBot
-                        </Card.Title>
+                            </Card.Title>
                             <Card.Text>
                                 This is GradeBot!
-                        </Card.Text>
+                            </Card.Text>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -46,7 +46,7 @@ function Projects() {
                             </Card.Title>
                             <Card.Text>
                                 This is HomeFinder!
-                        </Card.Text>
+                            </Card.Text>
                         </Card.Body>
                     </Card>
                 </Col>
