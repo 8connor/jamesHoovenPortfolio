@@ -4,10 +4,18 @@
     width: 1000px;
 }
 
+.mobileCompatible{
+    visibility: hidden;
+}
+
 @media only screen and (max-width: 600px){
     .resume{
         visibility: hidden;
         height: 0px;
         width: 0px;
+    }
+
+    .mobileCompatible{
+        visibility: visible;
     }
 }

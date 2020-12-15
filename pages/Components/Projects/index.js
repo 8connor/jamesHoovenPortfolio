@@ -4,14 +4,14 @@ import Img from "next/image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import styles from "./Projects.module.css";
+import Styles from "./Projects.module.css";
 
 function Projects() {
     return (
-        <Container className={styles.projCon} id="projects">
+        <Container className={Styles.projCon} id="projects">
             <Row>
                 <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                    <Card className={`${styles.infoCards}`}>
+                    <Card className={Styles.infoCards}>
                         <Img src="/images/gradeBot.png" width="400px" height="400px"></Img>
 
                         <Card.Body>
@@ -25,7 +25,7 @@ function Projects() {
                     </Card>
                 </Col>
                 <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                    <Card className={`${styles.infoCards}`}>
+                    <Card className={`${Styles.infoCards}`}>
                         <Img src="/images/collabSoup.png" width="400px" height="400px"></Img>
                         <Card.Body>
                             <Card.Title>
@@ -38,7 +38,7 @@ function Projects() {
                     </Card>
                 </Col>
                 <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                    <Card className={`${styles.infoCards}`}>
+                    <Card className={`${Styles.infoCards}`}>
                         <Img src="/images/homeFinder.png" width="400px" height="400px"></Img>
                         <Card.Body>
                             <Card.Title>

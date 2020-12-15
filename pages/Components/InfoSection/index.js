@@ -8,9 +8,9 @@ import styles from "./InfoSection.module.css";
 
 function InfoCon() {
     const config = {
-        marginTop: "300px",
+        marginTop: "200px",
         fontSize: "45px",
-        lineHeight: "0.5"
+        lineHeight: "1"
     }
 
     return (
@@ -18,11 +18,11 @@ function InfoCon() {
             <Container id="Home">
                 <Row style={config}>
                     <Col sm={{ span: 10, offset: 0 }} md={{ span: 10, offset: 0 }} lg={{ span: 10, offset: 0 }}>
-                        <p className="text-success">
+                        <p className="text-success" style={{marginBottom: "-10px"}}>
                             Hello,
                         </p>
                         <br />
-                        <p className="text-danger">my name is James,</p>
+                        <p className="text-danger" style={{marginBottom: "-10px"}}>my name is James,</p>
                         <br />
                         <p className="text-primary">
                             I am a Full-Stack Web Developer.
