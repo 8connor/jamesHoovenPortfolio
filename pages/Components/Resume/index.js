@@ -7,7 +7,7 @@ import Styles from "./Resume.module.css";
 function Resume() {
     return (
         <Container id="resume">
-            <Row className="justify-content-center">
+            <Row className="justify-content-center ml-5">
                 <Col>
                     <iframe src="/Resume.pdf" title="myResume" className={Styles.resume}>
                     </iframe>

@@ -8,50 +8,57 @@ import Styles from "./Projects.module.css";
 
 function Projects() {
     return (
-        <Container className={Styles.projCon} id="projects">
-            <Row>
-                <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                    <Card className={Styles.infoCards}>
-                        <Img src="/images/gradeBot.png" width="400px" height="400px"></Img>
+        <>
+            <Container>
+                <Row className="justify-content-center">
+                    <h1 className={Styles.projTitle}>Projects</h1>
+                </Row>
+            </Container>
+            <Container className={Styles.projCon} id="projects">
+                <Row>
+                    <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
+                        <Card className={Styles.infoCards}>
+                            <Img src="/images/gradeBot.png" width="400px" height="400px"></Img>
 
-                        <Card.Body>
-                            <Card.Title>
-                                GradeBot
+                            <Card.Body>
+                                <Card.Title>
+                                    GradeBot
                             </Card.Title>
-                            <Card.Text>
-                                This is GradeBot!
+                                <Card.Text>
+                                    This is GradeBot!
                             </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                    <Card className={Styles.infoCards}>
-                        <Img src="/images/collabSoup.png" width="400px" height="400px"></Img>
-                        <Card.Body>
-                            <Card.Title>
-                                CollabSoup
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
+                        <Card className={Styles.infoCards}>
+                            <Img src="/images/collabSoup.png" width="400px" height="400px"></Img>
+                            <Card.Body>
+                                <Card.Title>
+                                    CollabSoup
                             </Card.Title>
-                            <Card.Text>
-                                This is CollabSoup!
+                                <Card.Text>
+                                    This is CollabSoup!
                             </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                    <Card className={Styles.infoCards}>
-                        <Img src="/images/homeFinder.png" width="400px" height="400px"></Img>
-                        <Card.Body>
-                            <Card.Title>
-                                HomeFinder
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
+                        <Card className={Styles.infoCards}>
+                            <Img src="/images/homeFinder.png" width="400px" height="400px"></Img>
+                            <Card.Body>
+                                <Card.Title>
+                                    HomeFinder
                             </Card.Title>
-                            <Card.Text>
-                                This is HomeFinder!
+                                <Card.Text>
+                                    This is HomeFinder!
                             </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-        </Container>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
+        </>
     )
 }
 

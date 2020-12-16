@@ -1,9 +1,14 @@
+.projTitle{
+    text-decoration: underline;
+    color: white;
+}
+
 .infoCards {
     margin-top: 10px;
 }
 
 .projCon {
-    margin-top: -100px;
+    margin-top: 10px;
     margin-bottom: 50px;
 }
 

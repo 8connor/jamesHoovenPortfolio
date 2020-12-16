@@ -1,16 +1,27 @@
-.cog{
-    animation-name: rotate;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: normal;
+.cog {
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
 }
 
-@keyframes rotate{
-    from{
-        transform: rotate(0deg)
-    }
-    to{
-        transform: rotate(360deg)
-    }
+.infoCon {
+  margin-top: 200px;
+  font-size: 45px;
+  line-height: 1;
+}
+
+.aboutCon{
+    margin-top: 500px;
+    margin-bottom: 400px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
