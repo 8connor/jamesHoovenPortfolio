@@ -1,8 +1,14 @@
 import React from "react";
 import InfoSection from "./Components/InfoSection";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <InfoSection />
+    <>
+      <Head>
+        <title>Home</title>
+      </Head>
+      <InfoSection />
+    </>
   )
 }

@@ -20,7 +20,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <GlobalHeader />
       <MobileNav />
       <SideBar />
       <Component {...pageProps} />
