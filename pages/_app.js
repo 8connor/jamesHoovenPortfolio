@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import SideBar from "./Components/SideBar";
 import NProgress from "nprogress";
 import MobileNav from "./Components/MobileNav";
-import GlobalHeader from "./Components/GlobalHeader";
 import "../node_modules/nprogress/nprogress.css";
 import "../styles/global.scss";
 

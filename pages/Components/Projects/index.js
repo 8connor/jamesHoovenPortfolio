@@ -26,7 +26,7 @@ function Projects() {
                             </Card.Title>
                                 <Card.Text>
                                     This is GradeBot!
-                            </Card.Text>
+                                </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
