@@ -17,7 +17,7 @@ function InfoCon() {
                             Hello,
                         </p>
                         <br />
-                        <p className="text-danger" style={{ marginBottom: "-10px" }}>my name is James,</p>
+                        <p className="text-danger" style={{ marginBottom: "-10px" }}>my name is James Hooven,</p>
                         <br />
                         <p className="text-primary">
                             I am a Full-Stack Web Developer.
