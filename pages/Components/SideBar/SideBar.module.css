@@ -10,7 +10,7 @@
 }
 
 .iconCon {
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 .sideBar a {
@@ -20,6 +20,14 @@
   display: block;
   line-height: 0.5;
   margin-top: 50px;
+}
+
+.socials{
+  margin-top: 80px
+}
+
+.socials a{
+  margin-bottom: -40px;
 }
 
 @media only screen and (max-width: 600px) {
