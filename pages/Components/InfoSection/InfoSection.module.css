@@ -12,10 +12,11 @@
   line-height: 1;
 }
 
-.aboutCon{
-    margin-top: 500px;
-    margin-bottom: 400px;
+.aboutCon {
+  margin-top: 500px;
+  margin-bottom: 400px;
 }
+
 
 @keyframes rotate {
   from {
