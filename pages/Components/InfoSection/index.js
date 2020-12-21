@@ -65,13 +65,13 @@ function InfoCon() {
                             <Card.Body>
                                 <p>
                                     Full-stack web developer that is focused on making an enjoyable user experience on the web.
-                                    I recently graduated from Vanderbilt University full-stack web development bootcamp,
+                                    I recently graduated from Vanderbilt University Full-Stack Web Development Bootcamp,
                                     and have acquired many skills relating to web development. The more notable skills are my
-                                    ability to work efficiently with JavaScript, React.js, Node.js, HTML, CSS, Mongodb, SQL, and JQuery.
+                                    ability to work efficiently with JavaScript, React.js, Node.js, HTML, CSS, MongoDB, SQL, and JQuery.
                                     I focus on making my websites compatible with mobile responsive designs. I am looking forward to utilizing
                                     my interpersonal skills from a background in the service industry and my newly acquired skills provide added-value to an
                                     organization through technology and being detail-oriented.
-                            </p>
+                                </p>
                             </Card.Body>
                         </Card>
                     </Col>
