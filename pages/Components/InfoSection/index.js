@@ -26,16 +26,11 @@ function InfoCon() {
                 <Container>
                     <Row className={Styles.infoCon}>
                         <Col
-                            sm={{ span: 12, offset: 0 }}
-                            md={{ span: 12, offset: 0 }}
+                            md={{ span: 8, offset: 2 }}
+                            md={{ span: 8, offset: 2 }}
                             lg={{ span: 12, offset: 0 }}
 
-                            style={
-                                {
-                                    marginLeft: "-1900px",
-                                    marginTop: "340px"
-                                }
-                            }
+                            className={Styles.infoTextCol}
                         >
                             <p className="text-success introText">
                                 Hello,

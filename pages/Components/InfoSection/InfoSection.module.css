@@ -16,6 +16,11 @@
   margin-bottom: 400px;
 }
 
+.infoTextCol {
+  margin-left: -1900px;
+  margin-top: 340px;
+}
+
 .arrow {
   box-sizing: border-box;
   height: 5vw;
@@ -35,7 +40,7 @@
 
 @media only screen and (max-width: 600px) {
   .arrow {
-    margin-top: 50px
+    margin-top: 50px;
   }
 
   .infoCon {
