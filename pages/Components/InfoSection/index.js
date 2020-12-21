@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog } from "@fortawesome/free-solid-svg-icons"
 import Styles from "./InfoSection.module.css";
 import Card from "react-bootstrap/Card";
 import anime from "animejs/lib/anime"
@@ -50,11 +48,13 @@ function InfoCon() {
 
                 </Row>
                 <Row className="justify-content-center">
-                    <div className={`${Styles.arrow}`}></div>
+                    <a href="#aboutCon">
+                        <div className={`${Styles.arrow}`}></div>
+                    </a>
                 </Row>
             </Container>
 
-            <Container className={Styles.aboutCon}>
+            <Container className={Styles.aboutCon} id="aboutCon">
                 <Row>
                     <Card>
                         <Card.Title className="ml-3 h1">
