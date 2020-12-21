@@ -17,5 +17,6 @@
 
     .mobileCompatible{
         visibility: visible;
+        margin-top: 50px
     }
 }
