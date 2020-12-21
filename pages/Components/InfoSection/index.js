@@ -12,38 +12,48 @@ import anime from "animejs/lib/anime"
 function InfoCon() {
     useEffect(() => {
         anime({
-            targets: '.introText',
+            targets: ".introText",
             opacity: 1,
-            translateY: 50,
-            rotate: {
-                value: 360,
-                duration: 2000,
-                easing: 'easeInExpo'
-            },
-            delay: anime.stagger(100, { start: 1000 }),
+            translateX: 1900,
+            delay: function (el, i, l) {
+                return i * 200;
+            }
         });
     }, [])
 
     return (
         <>
-            <Container id="Home">
+            <Container>
                 <Row className={Styles.infoCon}>
-                    <Col sm={{ span: 10, offset: 0 }} md={{ span: 10, offset: 0 }} lg={{ span: 10, offset: 0 }}>
-                        <p className="text-success introText" style={{ marginBottom: "-10px" }}>
+                    <Col
+                        sm={{ span: 12, offset: 0 }}
+                        md={{ span: 12, offset: 0 }}
+                        lg={{ span: 12, offset: 0 }}
+
+                        style={
+                            {
+                                marginLeft: "-1900px"
+                            }
+                        }
+                    >
+                        <p className="text-success introText">
                             Hello,
                         </p>
                         <br />
-                        <p className="text-danger introText" style={{ marginBottom: "-10px" }}>my name is James Hooven,</p>
+                        <p className="text-danger introText">my name is James Hooven,</p>
                         <br />
                         <p className="text-primary introText">
                             I am a Full-Stack Web Developer.
                         </p>
                     </Col>
-                    <Col sm={{ span: 2, offset: 0 }} md={{ span: 2, offset: 0 }} lg={{ span: 2, offset: 0 }}>
-                        <FontAwesomeIcon size={"5x"} icon={faCog} className={`${Styles.cog} text-primary`} />
-                    </Col>
+
+
+                </Row>
+                <Row className="justify-content-center">
+                    <div className={`${Styles.arrow}`}></div>
                 </Row>
             </Container>
+
             <Container className={Styles.aboutCon}>
                 <Row>
                     <Card>
