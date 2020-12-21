@@ -11,6 +11,9 @@ $theme-colors: (
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
-  margin-top: 100px;
   background-color: $dark;
+}
+
+html{
+  scroll-behavior: smooth;
 }

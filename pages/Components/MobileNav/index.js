@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Styles from "./MobileNav.module.css";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,7 +14,7 @@ function MobileNav() {
 
     return (
         <>
-            <div className={`${Styles.mobileNav} bg-dark`}>
+            <div className={`${Styles.mobileNav} ${show ? `bg-dark` : `bg-invisible`}`}>
                 <Button type="button" onClick={() => handleShow()}>
                     <FontAwesomeIcon icon={faBars} />
                 </Button>

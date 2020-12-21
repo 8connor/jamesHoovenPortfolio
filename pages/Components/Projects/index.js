@@ -25,11 +25,12 @@ function Projects() {
                                     GradeBot
                                 </Card.Title>
                                 <Card.Text>
-                                    <p>
+                              
                                         gradeBot is a web application developed to create a more modernized way of keeping track of student grades from a
                                         teacher, administrator, and even student perspective.
-                                   </p>
-                                   <br />
+                             
+                                    <br />
+                                    <br />
                                     <a className="btn btn-primary mr-3" href="https://grade-bot.herokuapp.com/" target="_blank">Deployment</a>
                                     <a className="btn btn-primary mr-3" href="https://github.com/8connor/gradeBot" target="_blank">Github</a>
                                 </Card.Text>
@@ -44,11 +45,12 @@ function Projects() {
                                     CollabSoup
                             </Card.Title>
                                 <Card.Text>
-                                    <p>
+                                 
                                         Collab soup is a website dedicated to serving the developer community.
                                         We have personally found ourselves in the past looking for help on projects that were out of our grasp to handle alone.
                                         This website was created to make collaborating with other developers easier.
-                                    </p>
+                                  
+                                    <br />
                                     <br />
                                     <a className="btn btn-primary mr-3" href="https://sheltered-sierra-68964.herokuapp.com/" target="_blank">Deployment</a>
                                     <a className="btn btn-primary mr-3" href="https://github.com/leivanoe1011/Collab_Soup" target="_blank">Github</a>
@@ -64,14 +66,16 @@ function Projects() {
                                     HomeFinder
                             </Card.Title>
                                 <Card.Text>
-                                    <p>
-                                        Home finder is a web application that leverages the realtorAPI. 
+                                  
+                                        Home finder is a web application that leverages the realtorAPI.
                                         This API allows us to search through realtor listings all over the U.S. and display them in an appealing fashion.
-                                    </p>
+                                
                                     <br />
+                                    <br />
+
                                     <a className="btn btn-primary mr-3" href="https://leivanoe1011.github.io/home_finder_v2/index.html" target="_blank">Deployment</a>
                                     <a className="btn btn-primary mr-3" href="https://github.com/leivanoe1011/home_finder_v2" target="_blank">Github</a>
-                            </Card.Text>
+                                </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>

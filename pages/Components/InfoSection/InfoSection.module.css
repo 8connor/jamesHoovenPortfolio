@@ -7,7 +7,6 @@
 }
 
 .infoCon {
-  margin-top: 200px;
   font-size: 45px;
   line-height: 1;
 }
@@ -17,12 +16,34 @@
   margin-bottom: 400px;
 }
 
+.infoTextCol {
+  margin-left: -1900px;
+  margin-top: 340px;
+}
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
+.arrow {
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  margin-top: 240px;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .arrow {
+    margin-top: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .infoCon {
+    overflow-x: hidden;
   }
 }
