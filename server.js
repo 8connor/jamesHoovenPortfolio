@@ -1,6 +1,5 @@
-// server.js
 const { createServer } = require('https')
-var fs = require('fs');
+const fs = require('fs');
 const { parse } = require('url')
 const next = require('next')
 
@@ -15,8 +14,6 @@ var options = {
 
 app.prepare().then(() => {
     createServer(options, (req, res) => {
-        // Be sure to pass `true` as the second argument to `url.parse`.
-        // This tells it to parse the query portion of the URL.
         const parsedUrl = parse(req.url, true)
 
         handle(req, res, parsedUrl)
