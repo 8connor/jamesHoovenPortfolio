@@ -22,11 +22,11 @@
   margin-top: 50px;
 }
 
-.socials{
-  margin-top: 300px
+.socials {
+  margin-top: 300px;
 }
 
-.socials a{
+.socials a {
   margin-bottom: -40px;
 }
 
@@ -36,3 +36,12 @@
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .socials {
+    margin-top: 100px;
+  }
+
+  .socials a {
+    margin-bottom: -40px;
+  }
+}
