@@ -34,3 +34,6 @@ yarn-error.log*
 .vercel
 
 =10.16.0
+
+ssl.crt
+ssl.key
