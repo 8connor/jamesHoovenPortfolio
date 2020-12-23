@@ -11,14 +11,25 @@ import Parallax from "../Parallax";
 function InfoCon() {
     useEffect(() => {
         anime({
-            targets: ".introText",
+            targets: ".introBox .introText",
             opacity: 1,
             translateX: 1900,
             delay: function (el, i, l) {
                 return i * 200;
             }
         });
-    }, [])
+    }, []);
+
+    const aboutAnimate = () => {
+        anime({
+            targets: ".aboutCard",
+            scale: [0, 1],
+            easing: 'easeInOutExpo',
+            delay: function (el, i, l) {
+                return i * 100;
+            }
+        });
+    }
 
     return (
         <>
@@ -32,33 +43,37 @@ function InfoCon() {
 
                             className={Styles.infoTextCol}
                         >
-                            <p className="text-success introText">
-                                Hello,
-                        </p>
-                            <br />
-                            <p className="text-danger introText">my name is James Hooven,</p>
-                            <br />
-                            <p className="text-primary introText">
-                                I am a Full-Stack Web Developer.
-                        </p>
+                            <div className="introBox">
+
+
+                                <p className="text-success introText">
+                                    Hello,
+                                </p>
+                                <br />
+                                <p className="text-danger introText">my name is James Hooven,</p>
+                                <br />
+                                <p className="text-primary introText">
+                                    I am a Full-Stack Web Developer.
+                            </p>
+                            </div>
                         </Col>
                     </Row>
                     <Row className="justify-content-center">
                         <a href="#aboutCon">
-                            <div className={`${Styles.arrow} arrow`}></div>
+                            <div className={`${Styles.arrow} arrow`} onClick={() => aboutAnimate()}></div>
                         </a>
                     </Row>
                 </Container>
             </Parallax>
 
-            <Container className={Styles.aboutCon} id="aboutCon">
+            <Container className={`${Styles.aboutCon} aboutCard`} id="aboutCon">
                 <Row>
                     <Col
                         sm={{ span: 12, offset: 0 }}
                         md={{ span: 12, offset: 0 }}
                         lg={{ span: 12, offset: 0 }}
                     >
-                        <Card>
+                        <Card className="shadow">
                             <Card.Title className="ml-3 h1 text-primary">
                                 <h1>About</h1>
                             </Card.Title>

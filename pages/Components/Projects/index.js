@@ -1,18 +1,31 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Container from "react-bootstrap/Container";
 import Img from "next/image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Styles from "./Projects.module.css";
+import anime from "animejs/lib/anime";
 
 function Projects() {
+
+    useEffect(() => {
+        anime({
+            targets: ".projCards",
+            scale: [0, 1],
+            easing: 'easeInOutExpo',
+            delay: function (el, i, l) {
+                return i * 100;
+            }
+        });
+    }, [])
+
     return (
         <>
             <Container className={Styles.projCon} id="projects">
                 <Row>
                     <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                        <Card className={`${Styles.infoCards} shadow bg-dark text-light`}>
+                        <Card className={`${Styles.infoCards} projCards shadow bg-dark text-light`}>
                             <Img src="/images/gradeBot.png" width="400px" height="400px"></Img>
 
                             <Card.Body>
@@ -33,7 +46,7 @@ function Projects() {
                         </Card>
                     </Col>
                     <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                        <Card className={`${Styles.infoCards} shadow bg-dark text-light`}>
+                        <Card className={`${Styles.infoCards} projCards shadow bg-dark text-light`}>
                             <Img src="/images/collabSoup.png" width="400px" height="400px"></Img>
                             <Card.Body>
                                 <Card.Title>
@@ -54,7 +67,7 @@ function Projects() {
                         </Card>
                     </Col>
                     <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                        <Card className={`${Styles.infoCards} shadow bg-dark text-light`}>
+                        <Card className={`${Styles.infoCards} projCards shadow bg-dark text-light`}>
                             <Img src="/images/homeFinder.png" width="400px" height="400px"></Img>
                             <Card.Body>
                                 <Card.Title>

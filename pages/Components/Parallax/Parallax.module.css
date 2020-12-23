@@ -1,7 +1,7 @@
 .parallax {
   /* The image used */
   /* The image used */
-  background-image: url("parallax.jpg");
+  background-color: #222;
 
   /* Full height */
   height: 100vh;
