@@ -35,5 +35,10 @@ yarn-error.log*
 
 =10.16.0
 
+<<<<<<< HEAD
 jameshooven.csr
 jameshooven.key
+=======
+ssl.crt
+ssl.key
+>>>>>>> f9dae0df1abd23ed7bcfe57b3c26bf0ceab86085
