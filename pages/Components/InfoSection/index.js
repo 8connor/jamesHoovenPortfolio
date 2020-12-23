@@ -37,8 +37,8 @@ function InfoCon() {
                 <Container>
                     <Row className={`${Styles.infoCon} justify-content-center`}>
                         <Col
-                            md={{ span: 8, offset: 2 }}
-                            md={{ span: 8, offset: 2 }}
+                            md={{ span: 12, offset: 0 }}
+                            md={{ span: 12, offset: 0 }}
                             lg={{ span: 12, offset: 0 }}
 
                             className={Styles.infoTextCol}
