@@ -9,15 +9,10 @@ import Styles from "./Projects.module.css";
 function Projects() {
     return (
         <>
-            <Container>
-                <Row className="justify-content-center">
-                    <h1 className={Styles.projTitle}>Projects</h1>
-                </Row>
-            </Container>
             <Container className={Styles.projCon} id="projects">
                 <Row>
                     <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                        <Card className={Styles.infoCards}>
+                        <Card className={`${Styles.infoCards} shadow bg-dark text-light`}>
                             <Img src="/images/gradeBot.png" width="400px" height="400px"></Img>
 
                             <Card.Body>
@@ -38,7 +33,7 @@ function Projects() {
                         </Card>
                     </Col>
                     <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                        <Card className={Styles.infoCards}>
+                        <Card className={`${Styles.infoCards} shadow bg-dark text-light`}>
                             <Img src="/images/collabSoup.png" width="400px" height="400px"></Img>
                             <Card.Body>
                                 <Card.Title>
@@ -59,7 +54,7 @@ function Projects() {
                         </Card>
                     </Col>
                     <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }}>
-                        <Card className={Styles.infoCards}>
+                        <Card className={`${Styles.infoCards} shadow bg-dark text-light`}>
                             <Img src="/images/homeFinder.png" width="400px" height="400px"></Img>
                             <Card.Body>
                                 <Card.Title>

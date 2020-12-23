@@ -10,7 +10,7 @@ function Contact() {
     return (
         <Container className={Styles.contactCon}>
             <Row className="justify-content-center">
-                <Card id="Contact">
+                <Card className="bg-success mt-5 shadow" id="Contact">
                     <Card.Body>
                         <Row className="justify-content-center">
                             <Form className={Styles.contact}>

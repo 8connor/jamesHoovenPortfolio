@@ -27,7 +27,7 @@ function SideBar() {
     }, [])
 
     return (
-        <div className={`${Styles.sideBar} bg-dark`}>
+        <div className={`${Styles.sideBar} bg-dark shadow`}>
             <div className={Styles.iconCon}>
                 <a href="/">
                     <FontAwesomeIcon icon={faHome} className={`${home}`} />
