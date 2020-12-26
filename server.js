@@ -12,10 +12,15 @@ console.log(dev)
 const app = next({ dev, dir: __dirname });
 const handle = app.getRequestHandler();
 
-var options = {
-    key: fs.readFileSync('ssl.key'),
-    cert: fs.readFileSync('ssl.crt'),
-};
+// var options = {
+//     key: fs.readFileSync('./ssl.key'),
+//     cert: fs.readFileSync('./www_jameshooven_com.crt'),
+//     ca: [
+//         fs.readFileSync('./AAACertificateServices.crt'),
+//         fs.readFileSync('./SectigoRSADomainValidationSecureServerCA.crt'),
+//         fs.readFileSync('./USERTrustRSAAAACA.crt')
+//     ]
+// };
 
 app.prepare().then(() => {
     const server = express();
@@ -29,15 +34,15 @@ app.prepare().then(() => {
         console.log('> Ready on http://localhost:3000')
     })
 
-    https.createServer(options, (req, res) => {
-        const parsedUrl = parse(req.url, true);
+    // https.createServer(options, (req, res) => {
+    //     const parsedUrl = parse(req.url, true);
 
-        handle(req, res, parsedUrl);
+    //     handle(req, res, parsedUrl);
 
-    }).listen(3001, (err) => {
-        if (err) throw err;
-        console.log('> Ready on https://localhost:3001');
-    });
+    // }).listen(3001, (err) => {
+    //     if (err) throw err;
+    //     console.log('> Ready on https://localhost:3001');
+    // });
 })
     .catch((ex) => {
         console.error(ex.stack)
