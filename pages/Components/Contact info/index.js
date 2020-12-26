@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
+import anime from "animejs/lib/anime";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
@@ -7,10 +8,21 @@ import Card from "react-bootstrap/Card";
 import Styles from "./ContactInfo.module.css";
 
 function Contact() {
+    useEffect(() => {
+        anime({
+            targets: ".contactCard",
+            scale: [0, 1],
+            easing: 'easeInOutExpo',
+            delay: function (el, i, l) {
+                return i * 100;
+            }
+        });
+    }, []);
+
     return (
         <Container className={Styles.contactCon}>
             <Row className="justify-content-center">
-                <Card id="Contact">
+                <Card className="bg-success mt-5 shadow contactCard" id="Contact">
                     <Card.Body>
                         <Row className="justify-content-center">
                             <Form className={Styles.contact}>
