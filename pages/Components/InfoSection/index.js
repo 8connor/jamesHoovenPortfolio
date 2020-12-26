@@ -37,7 +37,7 @@ function InfoCon() {
                 <Container>
                     <Row className={`${Styles.infoCon} justify-content-center`}>
                         <Col
-                            md={{ span: 12, offset: 0 }}
+                            sm={{ span: 12, offset: 0 }}
                             md={{ span: 12, offset: 0 }}
                             lg={{ span: 12, offset: 0 }}
 
@@ -54,7 +54,7 @@ function InfoCon() {
                                 <br />
                                 <p className="text-primary introText">
                                     I am a Full-Stack Web Developer.
-                            </p>
+                                </p>
                             </div>
                         </Col>
                     </Row>

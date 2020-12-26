@@ -35,10 +35,5 @@ yarn-error.log*
 
 =10.16.0
 
-
-www_jameshooven_com.crt
-www_jameshooven_com.csr
-www_jameshooven_com.key
-AAACertificateServices.crt
-SectigoRSADomainValidationSecureServerCA.crt
-USERTrustRSAAAACA.crt
+jameshooven.csr
+jameshooven.key
