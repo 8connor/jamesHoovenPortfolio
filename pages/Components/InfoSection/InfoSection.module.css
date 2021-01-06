@@ -21,8 +21,6 @@
   margin-top: 340px;
 }
 
-
-
 .arrow {
   box-sizing: border-box;
   height: 5vw;
@@ -48,6 +46,12 @@
   .infoCon {
     overflow-x: hidden;
   }
+
+  .infoTextCol {
+    margin-right: 3800px;
+    margin-top: 200px;
+  }
+  
 }
 
 @media only screen and (max-width: 900px) {

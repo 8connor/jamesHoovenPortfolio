@@ -17,6 +17,7 @@ const handle = app.getRequestHandler();
 //     cert: fs.readFileSync('ssl.crt'),
 // };
 
+
 app.prepare().then(() => {
     const server = express();
 
@@ -39,8 +40,8 @@ app.prepare().then(() => {
         console.log('> Ready on https://localhost:3001');
     });
 })
-    .catch((ex) => {
+.catch((ex) => {
         console.error(ex.stack)
         process.exit(1)
 
-    });
+ });
