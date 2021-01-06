@@ -23,7 +23,7 @@
 }
 
 .socials {
-  margin-top: 300px;
+  margin-top: 100px;
 }
 
 .socials a {
@@ -33,15 +33,5 @@
 @media only screen and (max-width: 600px) {
   .sideBar {
     visibility: hidden;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .socials {
-    margin-top: 100px;
-  }
-
-  .socials a {
-    margin-bottom: -40px;
   }
 }

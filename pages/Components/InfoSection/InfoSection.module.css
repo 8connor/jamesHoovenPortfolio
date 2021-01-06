@@ -49,3 +49,13 @@
     overflow-x: hidden;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .arrow {
+    margin-top: 10px;
+  }
+
+  .infoCon {
+    overflow-x: hidden;
+  }
+}
