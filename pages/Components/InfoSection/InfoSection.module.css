@@ -1,6 +1,12 @@
 .infoCon {
   font-size: 45px;
   line-height: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
 }
 
 .aboutCon {
@@ -22,7 +28,12 @@
   border-width: 0px 1px 1px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
-  margin-top: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 800px;
+  margin-left: -40px;
 }
 
 .arrow:hover {
@@ -44,4 +55,3 @@
     margin-top: 200px;
   }
 }
-

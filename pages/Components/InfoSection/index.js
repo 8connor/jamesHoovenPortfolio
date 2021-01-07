@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Styles from "./InfoSection.module.css";
 import Card from "react-bootstrap/Card";
 import anime from "animejs/lib/anime";
-import Parallax from "../Parallax";
+import PartCon from "../PartCon";
 
 
 function InfoCon() {
@@ -33,7 +33,7 @@ function InfoCon() {
 
     return (
         <>
-            <Parallax>
+            <PartCon>
                 <Container>
                     <Row className={`${Styles.infoCon} justify-content-center`}>
                         <Col
@@ -60,11 +60,11 @@ function InfoCon() {
                     </Row>
                     <Row className="justify-content-center">
                         <a href="#aboutCon">
-                            <div className={`${Styles.arrow} arrow`} onClick={() => aboutAnimate()}></div>
+                            <div className={`${Styles.arrow}`} onClick={() => aboutAnimate()}></div>
                         </a>
                     </Row>
                 </Container>
-            </Parallax>
+            </PartCon>
 
             <Container className={`${Styles.aboutCon} aboutCard`} id="aboutCon">
                 <Row>

@@ -26,7 +26,7 @@ app.prepare().then(() => {
     const server = express();
 
     server.get('*', (req, res) => {
-        return res.redirect( dev ? "http://localhost:3001" : "https://" + req.headers.host + req.url);
+        return res.redirect(dev ? "http://localhost:3001" : "https://" + req.headers.host + req.url);
     });
 
     server.listen(dev ? 3000 : 80, (err) => {
