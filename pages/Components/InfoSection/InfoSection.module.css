@@ -1,6 +1,6 @@
 .infoCon {
   font-size: 45px;
-  line-height: 1;
+  line-height: 0.5;
   position: absolute;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: center;
   margin-left: 50vh;
-  margin-top: 80vh;
+  margin-top: 70vh;
   height: 50px;
   width: 200px;
 }

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>James Hooven's portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <InfoSection />

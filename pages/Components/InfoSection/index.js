@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -6,8 +6,6 @@ import Styles from "./InfoSection.module.css";
 import Card from "react-bootstrap/Card";
 import anime from "animejs/lib/anime";
 import PartCon from "../PartCon";
-import Button from "react-bootstrap/Button";
-
 
 function InfoCon() {
     useEffect(() => {
@@ -19,18 +17,33 @@ function InfoCon() {
                 return i * 200;
             }
         });
+
+        let options = {
+            root: document.querySelector('#scrollArea'),
+            rootMargin: '0px',
+            threshold: 1.0
+        }
+
+        let target = document.getElementById("aboutCard");
+
+        let callback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    target.classList.add("active")
+                }else{
+                    target.classList.remove("active")
+                }
+                
+            })
+        }
+
+        let observer = new IntersectionObserver(callback, options);
+
+        observer.observe(target);
     }, []);
 
-    const aboutAnimate = () => {
-        anime({
-            targets: ".aboutCard",
-            scale: [0, 1],
-            easing: 'easeInOutExpo',
-            delay: function (el, i, l) {
-                return i * 100;
-            }
-        });
-    }
+
+
 
     return (
         <>
@@ -62,21 +75,21 @@ function InfoCon() {
 
                     </Row>
                     <Row>
-                        <a className={`btn btn-dark ${Styles.sendBtn}`}>
+                        <a className={`btn btn-dark shadow ${Styles.sendBtn}`}>
                             Check out my stuff!
                         </a>
                     </Row>
                 </Container>
             </PartCon>
 
-            <Container className={`${Styles.aboutCon} aboutCard`} id="aboutCon">
+            <Container className={`${Styles.aboutCon}`}>
                 <Row>
                     <Col
                         sm={{ span: 12, offset: 0 }}
                         md={{ span: 12, offset: 0 }}
                         lg={{ span: 12, offset: 0 }}
                     >
-                        <Card className="shadow">
+                        <Card className={`shadow`} id="aboutCard">
                             <Card.Title className="ml-3 h1 text-primary">
                                 <h1>About</h1>
                             </Card.Title>

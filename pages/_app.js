@@ -5,6 +5,8 @@ import NProgress from "nprogress";
 import MobileNav from "./Components/MobileNav";
 import "../node_modules/nprogress/nprogress.css";
 import "../styles/global.scss";
+import "../styles/index.css";
+
 
 function MyApp({ Component, pageProps }) {
   NProgress.configure({ showSpinner: false });
