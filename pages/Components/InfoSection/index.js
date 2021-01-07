@@ -44,13 +44,13 @@ function InfoCon() {
                             className={Styles.infoTextCol}
                         >
                             <div className="introBox">
-
-
                                 <p className="text-success introText">
                                     Hello,
                                 </p>
                                 <br />
-                                <p className="text-danger introText">my name is James Hooven,</p>
+                                <p className="text-danger introText">
+                                    my name is James Hooven,
+                                </p>
                                 <br />
                                 <p className="text-primary introText">
                                     I am a Full-Stack Web Developer.

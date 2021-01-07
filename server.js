@@ -13,29 +13,33 @@ const app = next({ dev, dir: __dirname });
 const handle = app.getRequestHandler();
 
 // var options = {
-//     key: fs.readFileSync('ssl.key'),
-//     cert: fs.readFileSync('ssl.crt'),
+//     key: fs.readFileSync('./www_jameshooven_com.key'),
+//     cert: fs.readFileSync('./www_jameshooven_com.crt'),
+//     ca: [
+//          fs.readFileSync('./AAACertificateServices.crt'),
+//          fs.readFileSync('./SectigoRSADomainValidationSecureServerCA.crt'),
+//          fs.readFileSync('./USERTrustRSAAAACA.crt')
+//         ]
 // };
-
 
 app.prepare().then(() => {
     const server = express();
 
-    // server.get('*', (req, res) => {
-    //     return res.redirect( dev ? "https://localhost:3001" : "https://" + req.headers.host + req.url);
-    // });
+    server.get('*', (req, res) => {
+        return res.redirect( dev ? "http://localhost:3001" : "https://" + req.headers.host + req.url);
+    });
 
-    // server.listen(3000, (err) => {
-    //     if (err) throw err
-    //     console.log('> Ready on http://localhost:3000')
-    // })
+    server.listen(dev ? 3000 : 80, (err) => {
+        if (err) throw err
+        console.log('> Ready on http://localhost:3000')
+    })
 
     http.createServer( (req, res) => {
         const parsedUrl = parse(req.url, true);
 
         handle(req, res, parsedUrl);
 
-    }).listen(3001, (err) => {
+    }).listen(dev ? 3001 : 443, (err) => {
         if (err) throw err;
         console.log('> Ready on https://localhost:3001');
     });

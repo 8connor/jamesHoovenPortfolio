@@ -42,3 +42,5 @@ www_jameshooven_com.key
 AAACertificateServices.crt
 SectigoRSADomainValidationSecureServerCA.crt
 USERTrustRSAAAACA.crt
+
+server.js

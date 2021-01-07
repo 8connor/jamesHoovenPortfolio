@@ -1,11 +1,3 @@
-.cog {
-  animation-name: rotate;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: normal;
-}
-
 .infoCon {
   font-size: 45px;
   line-height: 1;
@@ -30,7 +22,7 @@
   border-width: 0px 1px 1px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
-  margin-top: 240px;
+  margin-top: 50px;
 }
 
 .arrow:hover {
@@ -51,15 +43,5 @@
     margin-right: 3800px;
     margin-top: 200px;
   }
-  
 }
 
-@media only screen and (max-width: 900px) {
-  .arrow {
-    margin-top: 10px;
-  }
-
-  .infoCon {
-    overflow-x: hidden;
-  }
-}

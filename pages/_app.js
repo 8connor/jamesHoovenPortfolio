@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
-import SideBar from "./Components/SideBar";
+import TopNav from "./Components/TopNav";
 import NProgress from "nprogress";
 import MobileNav from "./Components/MobileNav";
 import "../node_modules/nprogress/nprogress.css";
@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <MobileNav />
-      <SideBar />
+      <TopNav />
       <Component {...pageProps} />
     </>
   )
