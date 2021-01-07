@@ -35,6 +35,7 @@
   .infoCon {
     overflow-x: hidden;
     height: 110vh;
+    line-height: 1;
   }
 
   .sendBtn{

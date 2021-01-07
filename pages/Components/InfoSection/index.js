@@ -21,7 +21,7 @@ function InfoCon() {
         let options = {
             root: document.querySelector('#scrollArea'),
             rootMargin: '0px',
-            threshold: 1.0
+            threshold: 0.01
         }
 
         let target = document.getElementById("aboutCard");
@@ -30,8 +30,6 @@ function InfoCon() {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     target.classList.add("active")
-                }else{
-                    target.classList.remove("active")
                 }
                 
             })
@@ -75,7 +73,7 @@ function InfoCon() {
 
                     </Row>
                     <Row>
-                        <a className={`btn btn-dark shadow ${Styles.sendBtn}`}>
+                        <a className={`btn btn-dark shadow ${Styles.sendBtn}`} href="#projects">
                             Check out my stuff!
                         </a>
                     </Row>

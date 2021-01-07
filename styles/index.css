@@ -1,7 +1,6 @@
 .active {
-    animation: fadeIn 5s infinite;
+    animation: fadeIn 3s;
 }
-
 
 @keyframes fadeIn {
   0% {
