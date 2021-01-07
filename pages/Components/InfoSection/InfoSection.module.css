@@ -5,8 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -100px;
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
 }
 
 .aboutCon {
@@ -19,35 +20,27 @@
   margin-top: 340px;
 }
 
-.arrow {
-  box-sizing: border-box;
-  height: 5vw;
-  width: 5vw;
-  border-style: solid;
-  border-color: white;
-  border-width: 0px 1px 1px 0px;
-  transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
+.sendBtn{
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 800px;
-  margin-left: -40px;
-}
-
-.arrow:hover {
-  border-bottom-width: 4px;
-  border-right-width: 4px;
+  margin-left: 50vh;
+  margin-top: 80vh;
+  height: 50px;
+  width: 200px;
 }
 
 @media only screen and (max-width: 600px) {
-  .arrow {
-    margin-top: 50px;
-  }
-
   .infoCon {
     overflow-x: hidden;
+    height: 110vh;
+  }
+
+  .sendBtn{
+    margin: 0;
+    margin-left: 10vh;
+    margin-top: 90vh
   }
 
   .infoTextCol {

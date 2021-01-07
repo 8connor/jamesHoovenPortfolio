@@ -6,6 +6,7 @@ import Styles from "./InfoSection.module.css";
 import Card from "react-bootstrap/Card";
 import anime from "animejs/lib/anime";
 import PartCon from "../PartCon";
+import Button from "react-bootstrap/Button";
 
 
 function InfoCon() {
@@ -57,10 +58,12 @@ function InfoCon() {
                                 </p>
                             </div>
                         </Col>
+
+
                     </Row>
-                    <Row className="justify-content-center">
-                        <a href="#aboutCon">
-                            <div className={`${Styles.arrow}`} onClick={() => aboutAnimate()}></div>
+                    <Row>
+                        <a className={`btn btn-dark ${Styles.sendBtn}`}>
+                            Check out my stuff!
                         </a>
                     </Row>
                 </Container>
