@@ -7,7 +7,7 @@
   justify-content: center;
   margin-top: -100px;
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
 }
 
 .aboutCon {
@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: center;
   margin-left: 50vh;
-  margin-top: 70vh;
+  margin-top: 50vh;
   height: 50px;
   width: 200px;
 }
@@ -34,14 +34,14 @@
 @media only screen and (max-width: 600px) {
   .infoCon {
     overflow-x: hidden;
-    height: 110vh;
+    height: 100vh;
     line-height: 1;
   }
 
   .sendBtn{
     margin: 0;
     margin-left: 10vh;
-    margin-top: 90vh
+    margin-top: 80vh
   }
 
   .infoTextCol {

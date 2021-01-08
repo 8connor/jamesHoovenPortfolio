@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import TopNav from "./Components/TopNav";
 import NProgress from "nprogress";
-import MobileNav from "./Components/MobileNav";
 import "../node_modules/nprogress/nprogress.css";
 import "../styles/global.scss";
 import "../styles/index.css";
@@ -21,7 +20,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <MobileNav />
       <TopNav />
       <Component {...pageProps} />
     </>
