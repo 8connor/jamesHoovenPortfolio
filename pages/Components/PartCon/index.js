@@ -11,10 +11,10 @@ function PartCon(props) {
                 params={{
                     particles: {
                         number: {
-                            value: 100,
+                            value: 60,
                             density: {
                                 enable: true,
-                                value_area: 900
+                                value_area: 700
                             }
                         },
                         color: {
@@ -36,6 +36,15 @@ function PartCon(props) {
                         },
                         move: {
                             speed: 1
+                        },
+                    },
+                    interactivity: {
+                        detect_on: "window",
+                        events: {
+                            onhover: {
+                                enable: true,
+                                mode: "repulse"
+                            }
                         }
                     }
                 }}

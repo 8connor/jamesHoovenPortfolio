@@ -22,7 +22,7 @@ function InfoCon() {
             root: document.querySelector('#scrollArea'),
             rootMargin: '0px',
             threshold: 0.01
-        }
+        };
 
         let target = document.getElementById("aboutCard");
 
@@ -31,9 +31,8 @@ function InfoCon() {
                 if (entry.isIntersecting) {
                     target.classList.add("active")
                 }
-                
             })
-        }
+        };
 
         let observer = new IntersectionObserver(callback, options);
 
@@ -69,8 +68,6 @@ function InfoCon() {
                                 </p>
                             </div>
                         </Col>
-
-
                     </Row>
                     <Row>
                         <a className={`btn btn-dark shadow ${Styles.sendBtn}`} href="#projects">
