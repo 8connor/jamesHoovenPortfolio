@@ -1,53 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
+
 function TopNav() {
-  const [scrollState, setScrollState] = useState("bg-transparent");
-  let listener = null;
-
-  const config = {
-    marginBottom: "-56px",
-  };
-
-  useEffect(() => {
-    listener = document.addEventListener("scroll", (e) => {
-      var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 120) {
-        if (scrollState !== "bg-dark") {
-          setScrollState("bg-dark");
-        }
-      } else {
-        if (scrollState !== "top") {
-          setScrollState("bg-transparent");
-        }
-      }
-    });
-    return () => {
-      document.removeEventListener("scroll", listener);
-    };
-  }, [scrollState]);
-
   return (
-    <Navbar
-      collapseOnSelect
-      sticky="top"
-      expand="lg"
-      variant="dark"
-      style={config}
-      className={`${scrollState}`}
-    >
-      <Navbar.Brand href="#home">James Hooven's Portfolio</Navbar.Brand>
+    <Navbar collapseOnSelect sticky="top" expand="lg" bg="dark" variant="dark">
+      <Navbar.Brand href="#home"></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <Nav.Link href="#pricing">Projects</Nav.Link>
+          <Nav.Link href="#resume">Resume</Nav.Link>
+          <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link href="/contact">Contact</Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link href="#deets">More deets</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
-            123
+          <Nav.Link href="https://www.linkedin.com/in/james-hooven/">linkedIn</Nav.Link>
+          <Nav.Link eventKey={2} href="https://github.com/8connor">
+            Github
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
