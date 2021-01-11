@@ -96,7 +96,7 @@ function AboutSection() {
         >
           <Card className="shadow" id="aboutCard">
             <Card.Title className="ml-3 mt-3 text-primary">
-              <h1>About</h1>
+              <h1>About me</h1>
             </Card.Title>
             <Card.Body>
               <p>
