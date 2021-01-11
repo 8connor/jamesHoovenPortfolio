@@ -31,12 +31,8 @@
   width: 200px;
 }
 
-.skillIcon{
-  height: 50px;
-  width: 50px;
-  display: inline-block;
-  margin-right: 50px;
-
+.skillsIcon{
+  margin-right: 50px
 }
 
 @media only screen and (max-width: 600px) {
