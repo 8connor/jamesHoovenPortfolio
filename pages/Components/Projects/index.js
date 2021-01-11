@@ -30,7 +30,7 @@ function Projects() {
   }, []);
 
   return (
-    <Row className="bg-success">
+    <div className="bg-success">
       <Container className={Styles.projCon} id="projects">
         <Row>
           <Col
@@ -156,7 +156,7 @@ function Projects() {
           </Col>
         </Row>
       </Container>
-    </Row>
+    </div>
   );
 }
 
