@@ -46,7 +46,7 @@ function AboutSection() {
           lg={{ span: 12, offset: 0 }}
         >
           <Card className="shadow">
-            <Card.Title className="ml-3 text-primary">
+            <Card.Title className="ml-3 mt-3 text-primary">
               <h1>My skills</h1>
             </Card.Title>
             <Card.Body className="text-danger">
@@ -93,7 +93,7 @@ function AboutSection() {
           lg={{ span: 12, offset: 0 }}
         >
           <Card className={`shadow`} id="aboutCard">
-            <Card.Title className="ml-3 h1 text-primary">
+            <Card.Title className="ml-3 mt-3 text-primary">
               <h1>About</h1>
             </Card.Title>
             <Card.Body>

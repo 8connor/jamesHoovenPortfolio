@@ -10,12 +10,18 @@ import AboutSection from "./AboutSection";
 function InfoCon() {
   useEffect(() => {
     anime({
-      targets: ".introBox .introText",
+      targets: ".introText",
       opacity: 1,
       translateX: 1900,
       delay: function (el, i, l) {
         return i * 200;
       },
+    });
+
+    anime({
+      targets: ".sendBtnAnimation",
+      scale: [0, 1],
+      delay: 500,
     });
 
     let options = {
@@ -65,7 +71,7 @@ function InfoCon() {
           </Row>
           <Row>
             <a
-              className={`btn btn-dark shadow ${Styles.sendBtn}`}
+              className={`btn btn-dark shadow ${Styles.sendBtn} sendBtnAnimation`}
               href="#projects"
             >
               Check out my stuff!
