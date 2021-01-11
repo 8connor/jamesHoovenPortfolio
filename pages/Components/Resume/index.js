@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Styles from "./Resume.module.css";
-import anime from "animejs/lib/anime";
 
 function Resume() {
   useEffect(() => {
@@ -13,7 +12,7 @@ function Resume() {
       threshold: 0.01,
     };
 
-    let target = document.getElementById("projects");
+    let target = document.getElementById("resume");
 
     let callback = (entries, observer) => {
       entries.forEach((entry) => {
