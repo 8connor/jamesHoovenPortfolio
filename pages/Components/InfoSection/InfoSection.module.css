@@ -11,8 +11,8 @@
 }
 
 .aboutCon {
-  margin-top: 500px;
-  margin-bottom: 400px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .infoTextCol {
@@ -20,7 +20,7 @@
   margin-top: 340px;
 }
 
-.sendBtn{
+.sendBtn {
   position: absolute;
   display: flex;
   align-items: center;
@@ -31,8 +31,33 @@
   width: 200px;
 }
 
-.skillsIcon{
-  margin-right: 50px
+.skillsIcon {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.sassIcon {
+  color: pink;
+}
+
+.cssIcon {
+  color: blue;
+}
+
+.htmlIcon {
+  color: orange;
+}
+
+.javaScriptIcon {
+  color: yellow;
+}
+
+.databaseIcon {
+  color: red;
+}
+
+.nodeJsIcon {
+  color: green;
 }
 
 @media only screen and (max-width: 600px) {
@@ -42,9 +67,9 @@
     line-height: 1;
   }
 
-  .sendBtn{
+  .sendBtn {
     margin-left: 25vw;
-    margin-top: 83vh
+    margin-top: 83vh;
   }
 
   .infoTextCol {

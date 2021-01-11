@@ -10,7 +10,9 @@ import {
   faCss3,
   faNode,
   faJsSquare,
+  faSass
 } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 function AboutSection() {
   useEffect(() => {
@@ -51,23 +53,33 @@ function AboutSection() {
               <Row className="justify-content-center">
                 <FontAwesomeIcon
                   icon={faCss3}
-                  size="4x"
-                  className={Styles.skillsIcon}
+                  size="8x"
+                  className={`${Styles.skillsIcon} ${Styles.cssIcon}`}
                 />
                 <FontAwesomeIcon
                   icon={faHtml5}
-                  size="4x"
-                  className={Styles.skillsIcon}
+                  size="8x"
+                  className={`${Styles.skillsIcon} ${Styles.htmlIcon}`}
                 />
                 <FontAwesomeIcon
                   icon={faJsSquare}
-                  size="4x"
-                  className={Styles.skillsIcon}
+                  size="8x"
+                  className={`${Styles.skillsIcon} ${Styles.javaScriptIcon}`}
+                />
+                <FontAwesomeIcon
+                  icon={faDatabase}
+                  size="8x"
+                  className={`${Styles.skillsIcon} ${Styles.databaseIcon}`}
+                />
+                <FontAwesomeIcon
+                  icon={faSass}
+                  size="8x"
+                  className={`${Styles.skillsIcon} ${Styles.sassIcon}`}
                 />
                 <FontAwesomeIcon
                   icon={faNode}
-                  size="5x"
-                  className={Styles.skillsIcon}
+                  size="8x"
+                  className={`${Styles.skillsIcon} ${Styles.nodeJsIcon}`}
                 />
               </Row>
             </Card.Body>
