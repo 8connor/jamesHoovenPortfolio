@@ -74,7 +74,7 @@ function InfoCon() {
               className={`btn btn-dark shadow ${Styles.sendBtn} sendBtnAnimation`}
               href="#projects"
             >
-              Check out my stuff!
+              Check out my work!
             </a>
           </Row>
         </Container>

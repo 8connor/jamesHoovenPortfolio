@@ -1,32 +1,8 @@
-import React, { useEffect } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+import React from "react";
 import Col from "react-bootstrap/Col";
 import Styles from "./Resume.module.css";
 
 function Resume() {
-  // useEffect(() => {
-  //   let options = {
-  //     root: document.querySelector("#scrollArea"),
-  //     rootMargin: "0px",
-  //     threshold: 0.01,
-  //   };
-
-  //   let target = document.getElementById("resume");
-
-  //   let callback = (entries, observer) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         target.classList.add("active");
-  //       }
-  //     });
-  //   };
-
-  //   let observer = new IntersectionObserver(callback, options);
-
-  //   observer.observe(target);
-  // }, []);
-
   return (
     <>
       <Col sm={{ span: 12, offset: 0 }} md={{ span: 7 }} lg={{ span: 7 }}>
@@ -48,7 +24,7 @@ function Resume() {
           by clicking the button below.
         </p>
         <a href="/Resume.pdf" className="btn btn-primary" download>
-          Download Here!
+          Download
         </a>
       </Col>
     </>
