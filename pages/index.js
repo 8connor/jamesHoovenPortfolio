@@ -14,7 +14,6 @@ export default function Home() {
       </Head>
       <InfoSection />
       <Projects />
-      <Resume />
       <Contact />
     </>
   )

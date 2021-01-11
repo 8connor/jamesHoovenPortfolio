@@ -32,7 +32,7 @@ function Projects() {
   return (
     <div className="bg-success">
       <Container className={Styles.projCon} id="projects">
-        <Row>
+        <Row className="justify-content-center">
           <Col
             sm={{ span: 6, offset: 0 }}
             md={{ span: 6, offset: 0 }}

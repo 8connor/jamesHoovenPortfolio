@@ -10,7 +10,7 @@ import {
   faCss3,
   faNode,
   faJsSquare,
-  faSass
+  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
@@ -22,19 +22,21 @@ function AboutSection() {
       threshold: 0.01,
     };
 
-    let target = document.getElementById("aboutCard");
+    let target1 = document.getElementById("aboutCard");
+    let target2 = document.getElementById("skillCard");
 
     let callback = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          target.classList.add("active");
+          target1.classList.add("active");
+          target2.classList.add("active");
         }
       });
     };
 
     let observer = new IntersectionObserver(callback, options);
 
-    observer.observe(target);
+    observer.observe(target1);
   }, []);
 
   return (
@@ -45,7 +47,7 @@ function AboutSection() {
           md={{ span: 12, offset: 0 }}
           lg={{ span: 12, offset: 0 }}
         >
-          <Card className="shadow">
+          <Card className="shadow" id="skillCard">
             <Card.Title className="ml-3 mt-3 text-primary">
               <h1>My skills</h1>
             </Card.Title>
@@ -92,7 +94,7 @@ function AboutSection() {
           md={{ span: 12, offset: 0 }}
           lg={{ span: 12, offset: 0 }}
         >
-          <Card className={`shadow`} id="aboutCard">
+          <Card className="shadow" id="aboutCard">
             <Card.Title className="ml-3 mt-3 text-primary">
               <h1>About</h1>
             </Card.Title>
