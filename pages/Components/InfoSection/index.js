@@ -23,26 +23,6 @@ function InfoCon() {
       scale: [0, 1],
       delay: 500,
     });
-
-    let options = {
-      root: document.querySelector("#scrollArea"),
-      rootMargin: "0px",
-      threshold: 0.01,
-    };
-
-    let target = document.getElementById("aboutCard");
-
-    let callback = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          target.classList.add("active");
-        }
-      });
-    };
-
-    let observer = new IntersectionObserver(callback, options);
-
-    observer.observe(target);
   }, []);
 
   return (

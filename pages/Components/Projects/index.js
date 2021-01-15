@@ -7,28 +7,6 @@ import Card from "react-bootstrap/Card";
 import Styles from "./Projects.module.css";
 
 function Projects() {
-  useEffect(() => {
-    let options = {
-      root: document.querySelector("#scrollArea"),
-      rootMargin: "0px",
-      threshold: 0.01,
-    };
-
-    let target = document.getElementById("projects");
-
-    let callback = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          target.classList.add("active");
-        }
-      });
-    };
-
-    let observer = new IntersectionObserver(callback, options);
-
-    observer.observe(target);
-  }, []);
-
   return (
     <div className="bg-success">
       <Container className={Styles.projCon} id="projects">

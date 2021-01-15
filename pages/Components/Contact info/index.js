@@ -10,28 +10,6 @@ import emailjs from "emailjs-com";
 import Resume from "../Resume";
 
 function Contact() {
-  useEffect(() => {
-    let options = {
-      root: document.querySelector("#scrollArea"),
-      rootMargin: "0px",
-      threshold: 0.01,
-    };
-
-    let target = document.getElementById("contact");
-
-    let callback = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          target.classList.add("active");
-        }
-      });
-    };
-
-    let observer = new IntersectionObserver(callback, options);
-
-    observer.observe(target);
-  }, []);
-
   const sendEmail = (e) => {
     e.preventDefault();
 

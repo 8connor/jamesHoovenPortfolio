@@ -17,9 +17,9 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 function AboutSection() {
   useEffect(() => {
     let options = {
-      root: document.querySelector("#scrollArea"),
+      root: document.querySelector("#skillCard  "),
       rootMargin: "0px",
-      threshold: 0.01,
+      threshold: 0.1,
     };
 
     let target1 = document.getElementById("aboutCard");
@@ -28,8 +28,15 @@ function AboutSection() {
     let callback = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          target1.classList.remove("hidden")
+          target2.classList.remove("hidden");
           target1.classList.add("active");
           target2.classList.add("active");
+        }else{
+          target1.classList.add("hidden")
+          target2.classList.add("hidden");
+          target1.classList.remove("active");
+          target2.classList.remove("active");
         }
       });
     };
