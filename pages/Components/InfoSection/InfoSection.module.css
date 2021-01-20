@@ -20,7 +20,7 @@
   margin-top: 340px;
 }
 
-.skillCard{
+.skillCard {
   position: relative;
   top: 300px;
 }
@@ -80,5 +80,10 @@
   .infoTextCol {
     margin-right: 3800px;
     margin-top: 200px;
+  }
+
+  .skillsIcon {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
