@@ -54,8 +54,36 @@ function AboutSection() {
           md={{ span: 12, offset: 0 }}
           lg={{ span: 12, offset: 0 }}
         >
-          <Card className="shadow" id="skillCard">
+          <Card className="shadow" id="aboutCard">
             <Card.Title className="ml-3 mt-3 text-primary">
+              <h1>About me</h1>
+            </Card.Title>
+            <Card.Body>
+              <p>
+                Full-stack web developer that is focused on making an enjoyable
+                user experience on the web. I recently graduated from Vanderbilt
+                University Full-Stack Web Development Bootcamp, and have
+                acquired many skills relating to web development. The more
+                notable skills are my ability to work efficiently with
+                JavaScript, React.js, Node.js, HTML, CSS, MongoDB, SQL, and
+                JQuery. I focus on making my websites compatible with mobile
+                responsive designs. I am looking forward to utilizing my
+                interpersonal skills from a background in the service industry
+                and my newly acquired skills provide added-value to an
+                organization through technology and being detail-oriented.
+              </p>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+      <Row>
+        <Col
+          sm={{ span: 12, offset: 0 }}
+          md={{ span: 12, offset: 0 }}
+          lg={{ span: 12, offset: 0 }}
+        >
+          <Card className={`shadow mt-4 ${Styles.skillCard}`} id="skillCard">
+            <Card.Title className="text-center text-primary">
               <h1>My skills</h1>
             </Card.Title>
             <Card.Body className="text-danger">
@@ -91,34 +119,6 @@ function AboutSection() {
                   className={`${Styles.skillsIcon} ${Styles.nodeJsIcon}`}
                 />
               </Row>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row className="mt-5">
-        <Col
-          sm={{ span: 12, offset: 0 }}
-          md={{ span: 12, offset: 0 }}
-          lg={{ span: 12, offset: 0 }}
-        >
-          <Card className="shadow" id="aboutCard">
-            <Card.Title className="ml-3 mt-3 text-primary">
-              <h1>About me</h1>
-            </Card.Title>
-            <Card.Body>
-              <p>
-                Full-stack web developer that is focused on making an enjoyable
-                user experience on the web. I recently graduated from Vanderbilt
-                University Full-Stack Web Development Bootcamp, and have
-                acquired many skills relating to web development. The more
-                notable skills are my ability to work efficiently with
-                JavaScript, React.js, Node.js, HTML, CSS, MongoDB, SQL, and
-                JQuery. I focus on making my websites compatible with mobile
-                responsive designs. I am looking forward to utilizing my
-                interpersonal skills from a background in the service industry
-                and my newly acquired skills provide added-value to an
-                organization through technology and being detail-oriented.
-              </p>
             </Card.Body>
           </Card>
         </Col>

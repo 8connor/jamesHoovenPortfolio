@@ -8,7 +8,7 @@ import Styles from "./Projects.module.css";
 
 function Projects() {
   return (
-    <div className="bg-success">
+    <div className={`bg-success ${Styles.projSection}`}>
       <Container className={Styles.projCon} id="projects">
         <Row className="justify-content-center text-dark">
           <h1>My current projects!</h1>

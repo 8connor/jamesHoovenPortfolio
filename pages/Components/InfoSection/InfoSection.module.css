@@ -20,6 +20,11 @@
   margin-top: 340px;
 }
 
+.skillCard{
+  position: relative;
+  top: 300px;
+}
+
 .sendBtn {
   position: absolute;
   display: flex;
