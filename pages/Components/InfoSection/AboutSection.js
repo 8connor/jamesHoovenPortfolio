@@ -127,7 +127,7 @@ function AboutSection() {
                   <div className={`${Styles.skillsIcon} ${Styles.nodeJsIcon}`}>
                     <FontAwesomeIcon icon={faNode} size="8x" />
                     <p className="text-center" style={{ fontSize: "2rem" }}>
-                      Node.JS
+                      Node.js
                     </p>
                   </div>
                 </Row>
