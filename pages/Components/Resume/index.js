@@ -10,7 +10,7 @@ function Resume() {
           src="/Resume.pdf"
           title="myResume"
           id="resume"
-          className={`${Styles.resume} resumeFrame`}
+          className={`${Styles.resume} resumeFrame mt-4`}
         ></iframe>
       </Col>
       <Col
