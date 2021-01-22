@@ -34,7 +34,7 @@ app.prepare().then(() => {
         console.log('> Ready on http://localhost:3000')
     })
 
-    http.createServer( (req, res) => {
+    http.createServer((req, res) => {
         const parsedUrl = parse(req.url, true);
 
         handle(req, res, parsedUrl);
