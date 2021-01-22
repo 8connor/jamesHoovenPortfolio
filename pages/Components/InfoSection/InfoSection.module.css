@@ -11,8 +11,7 @@
 }
 
 .aboutCon {
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 10px;
 }
 
 .infoTextCol {
@@ -22,7 +21,7 @@
 
 .skillCard {
   position: relative;
-  top: 300px;
+  top: 200px;
 }
 
 .sendBtn {
@@ -37,8 +36,12 @@
 }
 
 .skillsIcon {
-  margin-right: 50px;
-  margin-left: 50px;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .sassIcon {

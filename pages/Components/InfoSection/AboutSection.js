@@ -28,12 +28,12 @@ function AboutSection() {
     let callback = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          target1.classList.remove("hidden")
+          target1.classList.remove("hidden");
           target2.classList.remove("hidden");
           target1.classList.add("active");
           target2.classList.add("active");
-        }else{
-          target1.classList.add("hidden")
+        } else {
+          target1.classList.add("hidden");
           target2.classList.add("hidden");
           target1.classList.remove("active");
           target2.classList.remove("active");
@@ -55,11 +55,11 @@ function AboutSection() {
           lg={{ span: 12, offset: 0 }}
         >
           <Card className="shadow" id="aboutCard">
-            <Card.Title className="ml-3 mt-3 text-primary">
-              <h1>About me</h1>
+            <Card.Title className="text-primary bg-light text-center">
+              <h1 className="ml-3 mt-3">About me</h1>
             </Card.Title>
             <Card.Body>
-              <p>
+              <p style={{ fontSize: "1.5rem" }}>
                 Full-stack web developer that is focused on making an enjoyable
                 user experience on the web. I recently graduated from Vanderbilt
                 University Full-Stack Web Development Bootcamp, and have
@@ -83,41 +83,65 @@ function AboutSection() {
           lg={{ span: 12, offset: 0 }}
         >
           <Card className={`shadow mt-4 ${Styles.skillCard}`} id="skillCard">
-            <Card.Title className="text-center text-primary">
+            <Card.Title className="text-center text-primary bg-light">
               <h1>My skills</h1>
             </Card.Title>
-            <Card.Body className="text-danger">
+            <Card.Body>
               <Row className="justify-content-center">
-                <FontAwesomeIcon
-                  icon={faCss3}
-                  size="8x"
-                  className={`${Styles.skillsIcon} ${Styles.cssIcon}`}
-                />
-                <FontAwesomeIcon
-                  icon={faHtml5}
-                  size="8x"
-                  className={`${Styles.skillsIcon} ${Styles.htmlIcon}`}
-                />
-                <FontAwesomeIcon
-                  icon={faJsSquare}
-                  size="8x"
-                  className={`${Styles.skillsIcon} ${Styles.javaScriptIcon}`}
-                />
-                <FontAwesomeIcon
-                  icon={faDatabase}
-                  size="8x"
-                  className={`${Styles.skillsIcon} ${Styles.databaseIcon}`}
-                />
-                <FontAwesomeIcon
-                  icon={faSass}
-                  size="8x"
-                  className={`${Styles.skillsIcon} ${Styles.sassIcon}`}
-                />
-                <FontAwesomeIcon
-                  icon={faNode}
-                  size="8x"
-                  className={`${Styles.skillsIcon} ${Styles.nodeJsIcon}`}
-                />
+                <div className={`${Styles.skillsIcon} ${Styles.cssIcon}`}>
+                  <FontAwesomeIcon
+                    icon={faCss3}
+                    size="8x"
+                  />
+                  <p className="text-center" style={{ fontSize: "2rem" }}>
+                    CSS
+                  </p>
+                </div>
+                <div className={`${Styles.skillsIcon} ${Styles.htmlIcon}`}>
+                  <FontAwesomeIcon
+                    icon={faHtml5}
+                    size="8x"
+                  />
+                  <p className="text-center" style={{ fontSize: "2rem" }}>
+                    HTML
+                  </p>
+                </div>
+                <div className={`${Styles.skillsIcon} ${Styles.javaScriptIcon}`}>
+                  <FontAwesomeIcon
+                    icon={faJsSquare}
+                    size="8x"
+                  />
+                  <p className="text-center" style={{ fontSize: "2rem" }}>
+                    JavaScript
+                  </p>
+                </div>
+                <div className={`${Styles.skillsIcon} ${Styles.databaseIcon}`}>
+                  <FontAwesomeIcon
+                    icon={faDatabase}
+                    size="8x"
+                  />
+                  <p className="text-center" style={{ fontSize: "2rem" }}>
+                    MySQL & MongoDB
+                  </p>
+                </div>
+                <div className={`${Styles.skillsIcon} ${Styles.sassIcon}`}>
+                  <FontAwesomeIcon
+                    icon={faSass}
+                    size="8x"
+                  />
+                  <p className="text-center" style={{ fontSize: "2rem" }}>
+                    Sass
+                  </p>
+                </div>
+                <div className={`${Styles.skillsIcon} ${Styles.nodeJsIcon}`}>
+                  <FontAwesomeIcon
+                    icon={faNode}
+                    size="8x"
+                  />
+                  <p className="text-center" style={{ fontSize: "2rem" }}>
+                    Node.JS
+                  </p>
+                </div>
               </Row>
             </Card.Body>
           </Card>

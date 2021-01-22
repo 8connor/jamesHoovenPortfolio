@@ -35,11 +35,10 @@ function Contact() {
     <Container className={Styles.contactCon}>
       <Row className="justify-content-center">
         <Col sm={{ span: 12, offset: 0 }} md={{ span: 5 }} lg={{ span: 5 }}>
-          <Card
-            className="bg-dark mt-5 shadow contactCard text-success"
-            id="contact"
-          >
-            <Card.Title className="mt-3 ml-3">Contact me</Card.Title>
+          <Card className=" shadow contactCard text-dark" id="contact">
+            <Card.Title className="text-center bg-light">
+              <h4 className="mt-4">Contact me</h4>
+            </Card.Title>
             <Card.Body>
               <Row className="justify-content-center">
                 <Form
