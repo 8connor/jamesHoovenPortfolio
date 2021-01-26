@@ -37,7 +37,7 @@
   width: 200px;
   margin-right: 10px;
   margin-left: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .sassIcon {
@@ -57,7 +57,7 @@
 }
 
 .databaseIcon {
-  color: gray;
+  color:  #333333;
   margin-bottom: 10px;
 }
 
