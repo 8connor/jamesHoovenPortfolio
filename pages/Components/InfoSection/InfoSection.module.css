@@ -53,15 +53,20 @@
 }
 
 .javaScriptIcon {
-  color: yellow;
+  color: #e6e600;
 }
 
 .databaseIcon {
   color: gray;
+  margin-bottom: 10px;
 }
 
 .nodeJsIcon {
   color: green;
+}
+
+.reactIcon {
+  color: #00cccc;
 }
 
 @media only screen and (max-width: 600px) {

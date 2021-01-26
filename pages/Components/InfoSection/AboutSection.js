@@ -11,6 +11,7 @@ import {
   faNode,
   faJsSquare,
   faSass,
+  faReact
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
@@ -100,6 +101,14 @@ function AboutSection() {
                     <FontAwesomeIcon icon={faHtml5} size="8x" />
                     <p className="text-center" style={{ fontSize: "2rem" }}>
                       HTML
+                    </p>
+                  </div>
+                  <div
+                    className={`${Styles.skillsIcon} ${Styles.reactIcon}`}
+                  >
+                    <FontAwesomeIcon icon={faReact} size="8x" />
+                    <p className="text-center" style={{ fontSize: "2rem" }}>
+                      React
                     </p>
                   </div>
                   <div
