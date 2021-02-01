@@ -28,6 +28,7 @@
 
   .projSection {
     height: 400vh;
+    margin-top: -10px;
   }
 
   .projCon {

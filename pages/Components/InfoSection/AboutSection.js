@@ -49,7 +49,7 @@ function AboutSection() {
 
   return (
     <div className="bg-success">
-      <Container className={`${Styles.aboutCon}`}>
+      <Container className={``}>
         <Row>
           <Col
             sm={{ span: 12, offset: 0 }}
