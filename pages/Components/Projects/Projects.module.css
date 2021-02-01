@@ -23,15 +23,14 @@
   .infoCards {
     margin: 10px auto 10px;
     height: 650px;
-    width: 350px;
+    width: 300px;
   }
 
   .projSection {
-    height: 300vh;
+    height: 400vh;
   }
 
   .projCon {
     margin-top: 10px;
-    margin-bottom: 10px;
   }
 }

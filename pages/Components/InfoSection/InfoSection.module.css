@@ -71,7 +71,8 @@
 
 @media only screen and (max-width: 600px) {
   .infoCon {
-    overflow-x: hidden;
+    top: -10px;
+    overflow: hidden;
     height: 100vh;
     line-height: 1;
   }
