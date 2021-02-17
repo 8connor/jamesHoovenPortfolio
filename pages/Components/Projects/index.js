@@ -20,6 +20,47 @@ function Projects() {
               className={`${Styles.infoCards} projCards shadow bg-dark text-light`}
             >
               <Img
+                src="/images/bugTracker.png"
+                width="400px"
+                height="400px"
+              ></Img>
+              <Card.Body>
+                <Card.Title>bugTracker</Card.Title>
+                <Card.Text>
+                  <p>
+                    bugTracker is an application that aims to simplify the process of bug ticket management.
+                    This application is currently still under development, but the basic functionality is currently in tact.
+                    This application uses React.js, Node.js, MongoDb, Express, and Bootstrap.
+                  </p>
+                  <br />
+                  <br />
+                  <a
+                    className="btn btn-primary mr-3"
+                    href="https://github.com/8connor/bugTracker"
+                    target="_blank"
+                  >
+                    Deployment
+                  </a>
+                  <a
+                    className="btn btn-primary mr-3"
+                    href="https://github.com/8connor/bugTracker"
+                    target="_blank"
+                  >
+                    Github
+                  </a>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col
+            sm={{ span: 6, offset: 0 }}
+            md={{ span: 6, offset: 0 }}
+            lg={{ span: 6, offset: 0 }}
+          >
+            <Card
+              className={`${Styles.infoCards} projCards shadow bg-dark text-light`}
+            >
+              <Img
                 src="/images/gradeBot.png"
                 width="400px"
                 height="400px"
@@ -124,47 +165,6 @@ function Projects() {
                   <a
                     className="btn btn-primary mr-3"
                     href="https://github.com/leivanoe1011/home_finder_v2"
-                    target="_blank"
-                  >
-                    Github
-                  </a>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col
-            sm={{ span: 6, offset: 0 }}
-            md={{ span: 6, offset: 0 }}
-            lg={{ span: 6, offset: 0 }}
-          >
-            <Card
-              className={`${Styles.infoCards} projCards shadow bg-dark text-light`}
-            >
-              <Img
-                src="/images/bugTracker.png"
-                width="400px"
-                height="400px"
-              ></Img>
-              <Card.Body>
-                <Card.Title>bugTracker</Card.Title>
-                <Card.Text>
-                  <p>
-                    bugTracker is an application that aims to simplify the process of bug ticket management.
-                    This application is currently still under development, but the basic functionality is currently in tact.
-                    This application uses React.js, Node.js, MongoDb, Express, and Bootstrap.
-                  </p>
-                  <br />
-                  <br />
-                  <a
-                    className="btn btn-primary mr-3"
-                    href="https://github.com/8connor/bugTracker"
-                    target="_blank"
-                  >
-                    Deployment
-                  </a>
-                  <a
-                    className="btn btn-primary mr-3"
-                    href="https://github.com/8connor/bugTracker"
                     target="_blank"
                   >
                     Github
