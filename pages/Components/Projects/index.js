@@ -36,7 +36,7 @@ function Projects() {
                   <br />
                   <a
                     className="btn btn-primary mr-3"
-                    href="https://github.com/8connor/bugTracker"
+                    href="https://bug-tracker-deployment.herokuapp.com/"
                     target="_blank"
                   >
                     Deployment
