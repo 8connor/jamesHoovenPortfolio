@@ -32,8 +32,7 @@ function Projects() {
                     This application is currently still under development, but the basic functionality is currently in tact.
                     This application uses React.js, Node.js, MongoDb, Express, and Bootstrap.
                   </p>
-                  <br />
-                  <br />
+                  
                   <a
                     className="btn btn-primary mr-3"
                     href="https://bug-tracker-deployment.herokuapp.com/"
