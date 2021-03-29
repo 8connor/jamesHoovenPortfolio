@@ -69,6 +69,14 @@
   color: #00cccc;
 }
 
+.php{
+  color: #8892BF
+}
+
+.laravel{
+  color: red
+}
+
 @media only screen and (max-width: 600px) {
   .infoCon {
     top: -10px;

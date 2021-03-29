@@ -11,7 +11,9 @@ import {
   faNode,
   faJsSquare,
   faSass,
-  faReact
+  faReact,
+  faPhp,
+  faLaravel
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
@@ -137,6 +139,22 @@ function AboutSection() {
                     <FontAwesomeIcon icon={faNode} size="8x" />
                     <p className="text-center" style={{ fontSize: "2rem" }}>
                       Node.js
+                    </p>
+                  </div>
+                  <div
+                    className={`${Styles.skillsIcon} ${Styles.php}`}
+                  >
+                    <FontAwesomeIcon icon={faPhp} size="8x" />
+                    <p className="text-center" style={{ fontSize: "2rem" }}>
+                      PHP
+                    </p>
+                  </div>
+                  <div
+                    className={`${Styles.skillsIcon} ${Styles.laravel}`}
+                  >
+                    <FontAwesomeIcon icon={faLaravel} size="8x" />
+                    <p className="text-center" style={{ fontSize: "2rem" }}>
+                      Laravel
                     </p>
                   </div>
                 </Row>
