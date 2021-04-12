@@ -44,7 +44,7 @@ function Contact() {
                 <Row className="justify-content-center">
                   <Form
                     className={Styles.contact}
-                    onSubmit={sendEmail}
+                    onSubmit={(e) => sendEmail(e)}
                     id="contactForm"
                   >
                     <Form.Group>
@@ -52,7 +52,7 @@ function Contact() {
                       <Form.Control
                         type="email"
                         placeholder="name@example.com"
-                        name="user_email"
+                        name="from_email"
                       />
                     </Form.Group>
                     <Form.Group>
@@ -60,7 +60,7 @@ function Contact() {
                       <Form.Control
                         type="fname"
                         placeholder="John Doe"
-                        name="user_name"
+                        name="from_name"
                       />
                     </Form.Group>
                     <Form.Group>
