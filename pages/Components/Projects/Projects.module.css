@@ -10,7 +10,7 @@
 }
 
 .projSection {
-  height: 200vh;
+  min-height: 200vh;
 }
 
 .projCon {
@@ -27,7 +27,7 @@
   }
 
   .projSection {
-    height: 400vh;
+    min-height: 400vh;
     margin-top: -10px;
   }
 
